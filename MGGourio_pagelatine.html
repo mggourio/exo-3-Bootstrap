@@ -5,9 +5,9 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <link rel="stylesheet" href="./assets/css/bootstrap.css" />
-        <link rel="stylesheet" href="./assets/js/jquery.js" />
-        <link rel="stylesheet" href="./assets/js/popper.js" />
-        <link rel="stylesheet" href="./assets/js/bootstrap.js" />
+        <script type="text/javascript" src="./assets/js/jquery.js"></script>
+        <script type="text/javascript" src="./assets/js/popper.js"></script>
+        <script type="text/javascript" src="./assets/js/bootstrap.js"></script>
         <script src="https://use.fontawesome.com/6de1da6cca.js"></script>
     </head>
     
@@ -30,25 +30,43 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-1">
-                    <i class="fa fa-search" aria-hidden="true"></i>
+                <div class="col-2">
+
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link"><i class="fa fa-search" aria-hidden="true"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"><i class="fa fa-user-o" aria-hidden="true"></i></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Separated link</a>
+                          </div>
+                        </li>
+                    </ul>
                 </div>
-                <div class="col-1">
-                    <i class="fa fa-user-o" aria-hidden="true"></i>
-                </div>
-                   <div class="col-2"> 
-                       <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button"
-                            id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
-                            aria-expanded="false">english</button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                            <button class="dropdown-item" type="button">français</button>
-                            <button class="dropdown-item" type="button">español</button>
-                        </div>
+               <div class="col-1"> 
+                    <div class="dropdown show">
+                      <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        English
+                      </a>
+
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#">Français</a>
+                        <a class="dropdown-item" href="#">Español</a>
+                      </div>
                     </div>
-                   </div>
-                </div>
-            </div><br />
+               </div>
+            </div>
+        </div>
+
+        <br />
         
         <div class="container-fluid" style="border-bottom: solid 0.1em">
             <div class="row">
